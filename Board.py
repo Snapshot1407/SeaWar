@@ -81,25 +81,3 @@ class Board:
         return False
     def begin(self):
         self.busy = []
-
-    """def __str__(self):
-        string = "  |"
-        for i in range(self.size):
-            string += f" {i+1} |"
-        self.set_len_board(len(string))
-        for i, j in enumerate(self.the_game_board):
-            string += "\n" + "-" * self.get_len_board()
-            string += "\n"+str(i + 1)+" | " + " | ".join(j) + " |"
-        if self.hide:
-            string = string.replace("■","0")
-        string += "\n"
-
-        return string
-
-    def set_len_board(self,n):
-        self.n = n
-
-
-    def get_len_board(self):
-        return self.n
-"""

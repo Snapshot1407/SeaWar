@@ -54,14 +54,6 @@ class Game():
     def loop(self):
         num = 0
         while True:
-            """
-            print("-" * 20)
-            print("Доска пользователя:")
-            print(self.user.my_board)
-            print("-" * 20)
-            print("Доска компьютера:")
-            print(self.ai.my_board)
-            print("-" * 20)"""
             Board.print_board(self.user.my_board, self.ai.my_board)
             if num % 2 == 0:
                 print("Ходит пользователь!")
