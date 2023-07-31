@@ -18,7 +18,7 @@ class Game():
         self.user = User(self.player,self.comp)
 
     def try_board(self):
-        lens = [3, 2, 2, 1, 1, 1, 1]
+        lens = [4,3,3,2, 2, 2, 1, 1, 1, 1]
         board = Board(size = self.size, hide= True)
         attempts = 0
         for l in lens:
